@@ -25,7 +25,7 @@ object JobService extends JsonSupport{
     jobsToSave.foreach(job => Await.result(JobRepository.insert(job), 2 second))
   }
 
-  def createFeeds(clientId: String): Unit = {
+  def createFeeds(clientId: String): Boolean = {
     val jobGroups = Await.result(JobGroupRepository.findByClientId(clientId), 2 seconds)
     checkRequestValidity(jobGroups)
     for(job <- jobGroups) {
@@ -41,6 +41,7 @@ object JobService extends JsonSupport{
       val jobs = Await.result(JobRepository.findByCondition(condition), 2 seconds)
       publishers.foreach(p => updateOutboundFeed(p.outboundFileName, jobs))
     }
+    true
   }
 
   def checkRequestValidity(param: Any): Unit = {

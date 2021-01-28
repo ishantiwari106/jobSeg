@@ -1,20 +1,58 @@
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
-[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 0 products, 0 sources, 0 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 46 products, 11 sources, 10 libraries[0m
 [0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/config/Mongo.scala, ${BASE}/src/main/scala/services/JobService.scala, ${BASE}/src/main/scala/repository/ClientRepository.scala, ${BASE}/src/main/scala/entities/Entity.scala, ${BASE}/src/main/scala/repository/JobRepository.scala, ${BASE}/src/main/scala/endpoints/Endpoint.scala, ${BASE}/src/main/scala/utils/JsonSupport.scala, ${BASE}/src/main/scala/Main.scala, ${BASE}/src/main/scala/repository/JobGroupRepository.scala, ${BASE}/src/main/scala/repository/PublisherRepository.scala, ${BASE}/src/main/scala/repository/RuleRepository.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(${BASE}/src/main/scala/services/JobService.scala, ${BASE}/src/main/scala/repository/PublisherRepository.scala, ${BASE}/src/main/scala/repository/JobRepository.scala, ${BASE}/src/main/scala/entities/Entity.scala, ${BASE}/src/main/scala/utils/JsonSupport.scala, ${BASE}/src/main/scala/repository/JobGroupRepository.scala, ${BASE}/src/main/scala/repository/RuleRepository.scala, ${BASE}/src/main/scala/config/Mongo.scala, ${BASE}/src/main/scala/repository/ClientRepository.scala, ${BASE}/src/main/scala/Main.scala, ${BASE}/src/main/scala/endpoints/Endpoint.scala), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
-[0m[[0m[0mdebug[0m] [0m[0mFull compilation, no sources in previous analysis.[0m
-[0m[[0m[0mdebug[0m] [0m[0mall 11 sources are invalidated[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
-[0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0% of all sources[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/services/JobService.scala), unmodified = ...),Set(${BASE}/target/scala-2.13/classes/services/JobService$.class, ${BASE}/target/scala-2.13/classes/endpoints/Endpoint.class, ${BASE}/target/scala-2.13/classes/services/JobService.class),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/services/JobService.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set(${BASE}/target/scala-2.13/classes/services/JobService$.class, ${BASE}/target/scala-2.13/classes/endpoints/Endpoint.class, ${BASE}/target/scala-2.13/classes/services/JobService.class)[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(services.JobService)[0m
+[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set(${BASE}/src/main/scala/services/JobService.scala, ${BASE}/src/main/scala/endpoints/Endpoint.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(services.JobService)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/services/JobService.scala, ${BASE}/src/main/scala/endpoints/Endpoint.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: services.JobService[0m
 [0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 11 Scala sources to /Users/ishantiwari/IdeaProjects/JobSeg/target/scala-2.13/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/ishantiwari/IdeaProjects/JobSeg/target/scala-2.13/classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.4.4:compile for Scala 2.13.4[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 3ca737c3 for Scala compiler version 2.13.4[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 5abd1ba3 for Scala compiler version 2.13.4[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.4/scala-library-2.13.4.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/Users/ishantiwari/IdeaProjects/JobSeg/target/scala-2.13/classes:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.13/2.5.31/akka-actor_2.13-2.5.31.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.13/10.1.11/akka-http_2.13-10.1.11.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.13/2.5.31/akka-stream_2.13-2.5.31.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/rasc/bsoncodec/1.0.1/bsoncodec-1.0.1.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mongodb/scala/mongo-scala-driver_2.13/2.9.0/mongo-scala-driver_2.13-2.9.0.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http-spray-json_2.13/10.1.11/akka-http-spray-json_2.13-10.1.11.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lightbend/akka/akka-stream-alpakka-mongodb_2.13/2.0.2/akka-stream-alpakka-mongodb_2.13-2.0.2.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.3.3/config-1.3.3.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.13/0.9.0/scala-java8-compat_2.13-0.9.0.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.13/10.1.11/akka-http-core_2.13-10.1.11.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf_2.13/2.5.31/akka-protobuf_2.13-2.5.31.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.13/0.3.8/ssl-config-core_2.13-0.3.8.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mongodb/bson/3.12.2/bson-3.12.2.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mongodb/scala/mongo-scala-bson_2.13/2.9.0/mongo-scala-bson_2.13-2.9.0.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mongodb/mongodb-driver-async/3.12.2/mongodb-driver-async-3.12.2.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.4/scala-reflect-2.13.4.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/spray/spray-json_2.13/1.3.5/spray-json_2.13-1.3.5.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mongodb/mongodb-driver-reactivestreams/1.12.0/mongodb-driver-reactivestreams-1.12.0.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.13/10.1.11/akka-parsing_2.13-10.1.11.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.13/1.1.2/scala-parser-combinators_2.13-1.1.2.jar:/Users/ishantiwari/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mongodb/mongodb-driver-core/3.12.2/mongodb-driver-core-3.12.2.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 5.375233832 s[0m
-[0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from services.JobService...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: services.JobService[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(services.JobService)[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of endpoints.Endpoint: Set(UsedName(createFeeds,[Default]))[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(services.JobService,ModifiedNames(changes = UsedName(createFeeds,[Default]))) invalidates 2 classes due to The services.JobService has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(createFeeds,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(services.JobService)[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m  > by member reference: Set(endpoints.Endpoint)[0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from endpoints.Endpoint...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: endpoints.Endpoint[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(endpoints.Endpoint)[0m
+[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of Main. This dependency is not being considered for invalidation.[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(endpoints.Endpoint,ModifiedNames(changes = UsedName(finalize,[Default]))) invalidates 1 classes due to The endpoints.Endpoint has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(finalize,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(endpoints.Endpoint)[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
+[0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0mFinal step, transitive dependencies:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 1.2928592 s[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
