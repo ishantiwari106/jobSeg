@@ -14,5 +14,13 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http-spray-json" % "10.1.11",
   "com.lightbend.akka" %% "akka-stream-alpakka-mongodb" % "2.0.2",
   "org.scalatest" %% "scalatest" % "3.2.2" % "test",
+  "com.typesafe.akka" %% "akka-http-testkit" % "10.2.2" % "test",
+  "com.typesafe.akka" %% "akka-testkit" % "2.6.10" % Test,
   "com.typesafe.akka" %% "akka-stream" % AkkaVersion
 )
+
+mainClass in compile := Some("src.main.scala.Main")
+enablePlugins(JavaAppPackaging)
+enablePlugins(DockerPlugin)
+
+

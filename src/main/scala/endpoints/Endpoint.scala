@@ -11,6 +11,11 @@ import scala.concurrent.ExecutionContext
 class Endpoint (implicit val ec: ExecutionContext) extends JsonSupport{
   def routes(): Route = {
     pathPrefix("job") {
+      get {
+        pathEnd {
+          complete("Testing api")
+        }
+      } ~
       post {
         path(Segment) { clientId =>
         pathEnd{
